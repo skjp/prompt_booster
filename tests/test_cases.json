@@ -1,0 +1,24 @@
+{
+    "test_cases": [
+        {
+            "name": "basic_prompt_enhancement",
+            "spoutlet": "default",
+            "parameters": {"input": "Write a story about a dog."},
+            "expected_pattern": "^[\\s\\S]{50,1000}$",
+            "timeout": 30,
+            "sample": true
+        },
+        {
+            "name": "detailed_prompt_enhancement", 
+            "spoutlet": "default",
+            "parameters": {"input": "Create a function to process user data."},
+            "expected_pattern": "^[\\s\\S]{100,2000}$",
+            "timeout": 30,
+            "sample": true
+        }
+    ],
+    "global_settings": {
+        "default_timeout": 30,
+        "default_model": "gpt-3.5-turbo"
+    }
+}

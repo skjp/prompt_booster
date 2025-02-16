@@ -1,0 +1,14 @@
+# Ignore everything in prompt_booster_local except the directory itself
+prompt_booster_local/*
+!prompt_booster_local/.gitkeep
+
+# Ignore everything in tests/samples except the directory itself
+tests/samples/*
+!tests/samples/.gitkeep
+
+# Ignore all files in tests directory except test_cases.json
+tests/*
+!tests/test_cases.json
+
+# Ignore python files in tests directory
+

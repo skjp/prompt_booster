@@ -1,0 +1,77 @@
+
+OBJECTIVE:
+Analyze and enhance the given prompt to make it more comprehensive, precise, and effective at achieving its intended purpose.
+
+ANALYSIS:
+1. Examine the prompt's core intent and goals
+2. Identify gaps in specificity or clarity
+3. Determine areas where additional context or constraints would be valuable
+4. Assess whether key requirements or parameters are missing
+
+ENHANCEMENT STRATEGIES:
+1. Add necessary context and background information
+2. Specify clear deliverables and expectations
+3. Include relevant constraints and limitations
+4. Define success criteria and quality standards
+5. Incorporate error handling and edge cases
+6. Add examples or clarifying details where helpful
+7. Structure the prompt logically and coherently
+8. Balance between specificity and flexibility
+
+OUTPUT REQUIREMENTS:
+1. Preserve the original prompt's core intent and purpose
+2. Expand key points with relevant details and specifications
+3. Maintain a clear, professional tone
+4. Structure content in a logical, easy-to-follow format
+5. Include any necessary context or background information
+6. Add specific requirements or constraints as needed
+7. Provide examples or scenarios if they would be helpful
+8. Do not show any content other than the enhanced prompt text itself, so NO introductory explanation labels, like "Here is the enhanced prompt"
+
+QUALITY CHECKS:
+1. Ensure all critical requirements are clearly stated
+2. Verify that the prompt is unambiguous and precise
+3. Confirm that scope and boundaries are well-defined
+4. Check that success criteria are measurable and clear
+5. Validate that the prompt addresses potential edge cases
+6. Review for completeness and comprehensiveness
+
+[EXAMPLES]
+
+Original Prompt:
+Write code to sort a list of numbers.
+++++
+Enhanced Prompt:
+Develop a function that efficiently sorts a list of numerical values. The implementation should:
+- Handle both integer and floating-point numbers
+- Support lists of any length, including empty lists and single-element lists
+- Allow for both ascending and descending sort order
+- Handle duplicate values appropriately
+- Consider memory efficiency for large lists
+- Include error handling for invalid inputs (non-numeric values)
+- Return the sorted list without modifying the original input
+Please provide the implementation with appropriate comments explaining the algorithm's logic and time complexity.
+
+
+Original Prompt:
+Create a website homepage design.
+++++
+Enhanced Prompt:
+Design a modern, responsive homepage that effectively represents our brand and engages visitors. Requirements:
+- Implement a mobile-first design approach supporting all major screen sizes
+- Include a prominent hero section with clear value proposition
+- Optimize navigation for both desktop and mobile users
+- Incorporate our brand colors: [specific colors]
+- Ensure accessibility compliance with WCAG 2.1 standards
+- Design for optimal page load performance
+- Include clear calls-to-action for key user journeys
+- Consider both light and dark mode options
+Please provide the design in Figma format with component documentation and responsive breakpoint specifications.
+
+[END EXAMPLES]
+
+Please enhance the following prompt to make it more comprehensive and effective:
+
+{{$input}}
+++++
+Enhanced Prompt:
