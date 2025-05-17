@@ -1,0 +1,128 @@
+OBJECTIVE:
+Analyze and enhance the given prompt to make it more comprehensive, precise, and effective at achieving its intended purpose.
+
+ANALYSIS:
+1. Examine the prompt's core intent and goals
+2. Identify gaps in specificity or clarity
+3. Determine areas where additional context or constraints would be valuable
+4. Assess whether key requirements or parameters are missing
+
+ENHANCEMENT STRATEGIES:
+1. Add necessary context and background information to the original prompt's core.
+2. Specify clear, highly detailed deliverables and expectations for the response.
+3. Include all relevant constraints, limitations, and boundary conditions.
+4. Define comprehensive success criteria and rigorous quality standards for the output.
+5. Incorporate considerations for error handling, edge cases, and alternative scenarios.
+6. Add illustrative examples or clarifying details where helpful to deepen understanding.
+7. Structure the enhanced prompt logically, ensuring a natural flow towards a comprehensive answer.
+8. Emphasize the need for an exhaustive and lengthy response, exploring all facets of the request.
+9. Instruct the enhanced prompt to explicitly request a preliminary phase where the responding model asks any and all clarifying questions to maximize accuracy and completeness *before* generating the main detailed response.
+10. Instruct the enhanced prompt to explicitly request suggestions for other pertinent information, related topics, or further explorations that could accompany the main response.
+11. Ensure the enhanced prompt requests not just an answer, but a deep dive into the subject matter, covering nuances and providing extensive detail.
+
+OUTPUT REQUIREMENTS:
+1. Preserve the original prompt's core intent and purpose.
+2. Expand key points with extensive details, specifications, and depth.
+3. Maintain a clear, professional, and inquisitive tone.
+4. Structure content in a logical, easy-to-follow format, suitable for a multi-stage response (questions, then detailed answer, then suggestions).
+5. Include any necessary context or background information to facilitate a comprehensive understanding by the next model.
+6. Add specific requirements or constraints as needed to guide the desired extensive output.
+7. Provide examples or scenarios within the enhanced prompt if they would be helpful for the next model to understand the desired depth.
+8. The enhanced prompt itself MUST NOT contain any introductory phrases like "Here is the enhanced prompt." It should directly be the new, more detailed prompt.
+9. The enhanced prompt MUST explicitly instruct the recipient (the next AI model) to:
+    a. First, ask any and all clarifying questions it might have to ensure complete understanding and to maximize the accuracy and usefulness of the final result. It should state that it will wait for answers to these questions before proceeding.
+    b. Second, after receiving clarifications (if any questions were asked), provide a highly detailed, extensive, and comprehensive response to the core request. This response should aim for significant length and depth.
+    c. Third, after providing the main response, suggest other relevant information, related topics, or areas for further exploration that could be included to make the answer even more useful.
+
+QUALITY CHECKS:
+1. Ensure all critical requirements are clearly stated for the *next model*.
+2. Verify that the enhanced prompt is unambiguous and precise in its instructions for the multi-stage response.
+3. Confirm that scope and boundaries are well-defined for the requested extensive output.
+4. Check that success criteria for the *next model's* response are measurable and clear.
+5. Validate that the enhanced prompt encourages the *next model* to address potential edge cases.
+6. Review for completeness and comprehensiveness in its guidance for the *next model*.
+7. Ensure the enhanced prompt explicitly includes the three-stage structure: (1) ask questions, (2) provide detailed response, (3) suggest additional information.
+
+[EXAMPLES]
+
+Original Prompt:
+Write code to sort a list of numbers.
+++++
+Enhanced Prompt:
+You are tasked with developing a Python function to efficiently sort a list of numerical values.
+
+Phase 1: Clarification Questions
+Before providing the code, please ask any questions that would help clarify the requirements or constraints. For instance:
+- Are there any specific performance requirements (e.g., "must sort 1 million numbers in under X seconds")?
+- What is the expected range or type of numbers (e.g., positive integers only, mix of floats and ints)?
+- Is there a preferred sorting algorithm, or should the most generally efficient one be chosen?
+- How should non-numeric elements in the input list be handled (e.g., raise an error, filter them out)?
+I will answer your questions before you proceed to the implementation.
+
+Phase 2: Comprehensive Solution
+Once all your questions are answered, please provide the following:
+1.  The Python function definition.
+2.  The function should:
+    a.  Handle both integer and floating-point numbers.
+    b.  Support lists of varying lengths, including empty and single-element lists.
+    c.  Allow specification of sort order (ascending/descending) via a parameter.
+    d.  Handle duplicate values correctly.
+    e.  Prioritize memory efficiency for potentially large lists.
+    f.  Implement robust error handling for invalid inputs as per clarifications.
+    g.  Return a new sorted list, leaving the original list unmodified.
+3.  Detailed comments within the code explaining the logic, algorithm choice, and complexity.
+4.  A brief explanation of the chosen sorting algorithm's time and space complexity (e.g., O(n log n) time, O(n) space).
+5.  At least three diverse usage examples, including handling of an empty list, a list with duplicates, and a list requiring descending order.
+
+Phase 3: Suggestions for Further Enhancement
+After presenting the solution, please suggest:
+-   Two alternative sorting algorithms that could be suitable, with a brief comparison of their pros/cons versus your chosen algorithm for this specific task.
+-   Potential extensions to the function, such as sorting a list of custom objects by a specific attribute.
+-   Any other relevant considerations, such as stability in sorting or Python-specific sorting optimizations (e.g., Timsort).
+
+
+Original Prompt:
+Create a website homepage design.
+++++
+Enhanced Prompt:
+You are tasked with designing a modern, responsive, and highly engaging homepage that effectively represents our brand [Optional: specify brand name/industry if known] and captivates visitors, driving them towards key conversion goals.
+
+Phase 1: Clarification Questions
+Before starting the design, please ask any clarifying questions to ensure the final concept aligns perfectly with the vision and objectives. For example:
+- What is the primary goal of the homepage (e.g., lead generation, brand awareness, direct sales)?
+- Who is the primary target audience (e.g., demographics, psychographics, technical proficiency)?
+- Are there any existing brand guidelines, logos, or color palettes that must be adhered to? ([If available, state "Guidelines will be provided"] or specify colors: e.g., Brand Colors: Primary: #XXXXXX, Secondary: #YYYYYY, Accent: #ZZZZZZ).
+- Are there any specific sections or content elements that absolutely must be included (e.g., testimonials, product showcase, blog feed)?
+- What are some competitor homepages that are liked or disliked, and why?
+- Are there technical constraints (e.g., specific CMS, compatibility requirements)?
+I will provide detailed answers to your questions before you proceed to the design phase.
+
+Phase 2: Comprehensive Design Proposal
+Once all clarifications are addressed, please provide a comprehensive design proposal. This should include:
+1.  **Design Concept & Rationale:** A description of the overall design approach, user experience strategy, and how it meets the project goals.
+2.  **Visual Mockups:** High-fidelity mockups for desktop, tablet, and mobile views. These should showcase:
+    a.  A prominent and compelling hero section with a clear value proposition and call-to-action (CTA).
+    b.  Intuitive navigation optimized for all device types.
+    c.  Effective use of typography, imagery, and whitespace.
+    d.  Adherence to brand identity (colors, fonts, tone).
+    e.  Accessibility considerations meeting WCAG 2.1 AA standards.
+    f.  Design for optimal page load performance (e.g., image optimization strategies).
+    g.  Clear CTAs for key user journeys.
+    h.  Consideration for both light and dark mode options, if appropriate.
+3.  **Key Sections Detailed:** Specific mockups or detailed descriptions for critical homepage sections (e.g., services, about us, portfolio, contact).
+4.  **Interaction Notes:** Brief notes on key animations, hover states, or micro-interactions that enhance UX.
+5.  **Asset Specification:** (If applicable) Format for deliverables (e.g., Figma file with component documentation and responsive breakpoint specifications, Adobe XD).
+
+Phase 3: Suggestions for Further Enhancement
+After presenting the core design, please also suggest:
+-   Ideas for A/B testing elements on the homepage (e.g., different headlines, CTA button colors).
+-   Potential future additions or interactive elements that could further enhance user engagement (e.g., interactive product configurator, personalized content sections).
+-   Recommendations for complementary pages or content that would support the homepage's goals.
+
+[END EXAMPLES]
+
+Please enhance the following prompt to make it more comprehensive and effective:
+
+{{$input}}
+++++
+Enhanced Prompt:

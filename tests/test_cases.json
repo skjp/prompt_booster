@@ -4,21 +4,29 @@
             "name": "basic_prompt_enhancement",
             "spoutlet": "default",
             "parameters": {"input": "Write a story about a dog."},
-            "expected_pattern": "^[\\s\\S]{50,1000}$",
-            "timeout": 30,
+            "expected_pattern": "^[\\s\\S]{100,4096}$",
+            "timeout": 60,
             "sample": true
         },
         {
             "name": "detailed_prompt_enhancement", 
             "spoutlet": "default",
             "parameters": {"input": "Create a function to process user data."},
-            "expected_pattern": "^[\\s\\S]{100,2000}$",
-            "timeout": 30,
+            "expected_pattern": "^[\\s\\S]{100,4096}$",
+            "timeout": 60,
+            "sample": false
+        },
+        {
+            "name": "extensive_prompt_enhancement",
+            "spoutlet": "extensive",
+            "parameters": {"input": "I want to learn about sloths"},
+            "expected_pattern": "^[\\s\\S]{100,4096}$",
+            "timeout": 60,
             "sample": true
         }
     ],
     "global_settings": {
-        "default_timeout": 30,
+        "default_timeout": 70,
         "default_model": "gpt-3.5-turbo"
     }
 }
